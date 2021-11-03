@@ -1,6 +1,6 @@
 import styles from "./Button.module.css";
 import { ButtonProps } from "./Button.props";
-import Arrow from "./arrow.svg";
+import ArrowIcon from "./arrow.svg";
 import cn from "classnames";
 
 export const Button = ({
@@ -28,7 +28,7 @@ export const Button = ({
             [styles.right]: arrow === "right",
           })}
         >
-          <Arrow />
+          <ArrowIcon />
         </span>
       )}
     </button>

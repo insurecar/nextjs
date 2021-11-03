@@ -22,10 +22,10 @@
     "incremental": true
   },
   "include": [
-    "next-env.d.ts",
-    "svg.d.ts",
+    "images.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "next-env-c.d.ts"
   ],
   "exclude": [
     "node_modules"
