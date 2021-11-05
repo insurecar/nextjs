@@ -1,10 +1,17 @@
 import { Htag, Tag, Button, P } from "../components";
+import { useState, useEffect } from "react";
 
 export default function Home(): JSX.Element {
+  const [counter, setCounter] = useState<number>(0);
+
   return (
     <div>
-      <Htag tag="h1">Текст</Htag>
-      <Button appearance="primary" arrow="right">
+      <Htag tag="h1">{counter}</Htag>
+      <Button
+        appearance="primary"
+        arrow="right"
+        onClick={() => setCounter((counter) => ++counter)}
+      >
         Press me
       </Button>
       <Button appearance="ghost" arrow="down">
