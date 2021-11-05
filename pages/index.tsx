@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 export default function Home(): JSX.Element {
   const [counter, setCounter] = useState<number>(0);
+  const [rating, setRating] = useState<number>(4);
 
   return (
     <div>
@@ -27,7 +28,7 @@ export default function Home(): JSX.Element {
       <Tag size="s" color="ghost" href="#">
         sdfsdf
       </Tag>
-      <Rating rating={3} />
+      <Rating rating={rating} isEditable setRating={setRating} />
     </div>
   );
 }
